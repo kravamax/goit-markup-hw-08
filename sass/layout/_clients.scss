@@ -1,0 +1,37 @@
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.clients-list__item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.clients-list__link {
+  display: flex;
+  width: 168px;
+  height: 90px;
+  padding: 16px 32px;
+}
+
+.clients-list__icon {
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients-list__link:hover &,
+  .clients-list__link:focus & {
+    fill: $accent-color;
+  }
+}
