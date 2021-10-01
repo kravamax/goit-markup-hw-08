@@ -1,5 +1,8 @@
 .social-list {
+  @extend %list;
+
   display: flex;
+  justify-content: center;
   margin-top: 16px;
 }
 
@@ -10,6 +13,8 @@
 }
 
 .social-list__link {
+  @extend %link;
+
   display: flex;
   width: 44px;
   height: 44px;
