@@ -25,6 +25,7 @@
   display: none;
 
   position: absolute;
+  z-index: 2;
   width: 100%;
   top: 0;
   left: 0;
@@ -58,10 +59,16 @@
   font-size: 40px;
   line-height: calc(47 / 40);
   color: $main-title-color;
+  @media screen and (max-width: 479px) {
+    font-size: 18px;
+  }
 }
 
 .mob-contacts__set {
   margin-top: 302px;
+  @media screen and (max-width: 479px) {
+    margin-top: 170px;
+  }
 }
 
 .mob-contacts__item {
@@ -78,26 +85,40 @@
   color: currentColor;
   font-size: 24px;
   line-height: calc(28 / 24);
+
+  @media screen and (max-width: 479px) {
+    font-size: 16px;
+  }
 }
 
 .mob-contacts__link--accent {
   font-size: 34px;
   color: $accent-color;
+
+  @media screen and (max-width: 479px) {
+    font-size: 16px;
+  }
 }
 
 .mob-social-set {
   @extend %list;
 
-  //   display: flex;
   margin-top: 64px;
 }
 
 .mob-social__item {
   display: inline-flex;
   &:not(:last-child) {
-    margin-right: 10px;
-    padding-right: 10px;
+    margin-right: 5px;
+    padding-right: 5px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  @media screen and (min-width: 479px) {
+    &:not(:last-child) {
+      margin-right: 10px;
+      padding-right: 10px;
+    }
   }
 }
 
@@ -107,6 +128,10 @@
   font-size: 18px;
   line-height: calc(22 / 18);
   color: $accent-color;
+
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+  }
 }
 
 /*----------------------------------------------------------------------------- */

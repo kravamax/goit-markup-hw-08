@@ -1,18 +1,19 @@
 .menu-button {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: inline-flex;
   margin: 0;
   margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
-  // transform: fill 2500ms linear;
+  transition: fill 250ms linear;
 
   &:hover,
   &:focus {
     fill: $accent-color;
   }
+
   & .icon-cross {
     display: none;
   }

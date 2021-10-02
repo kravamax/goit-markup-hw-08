@@ -53,10 +53,10 @@
         <div class="container-menu" id="menu-container" data-menu>
           <ul class="menu-set">
             <li class="menu-set__item">
-              <a href="" class="menu-set__link current">Студия</a>
+              <a href="./index.html" class="menu-set__link current">Студия</a>
             </li>
             <li class="menu-set__item">
-              <a href="" class="menu-set__link">Портфолио</a>
+              <a href="./portfolio.html" class="menu-set__link">Портфолио</a>
             </li>
             <li class="menu-set__item">
               <a href="" class="menu-set__link">Контакты</a>
@@ -203,12 +203,14 @@
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-list__item">
-              <a class="link" href="#"
-                ><img
-                  src="./images/box/box1.jpg"
+              <a class="link" href="#">
+                <img
+                  srcset="
+                    ./images/work/work-card1-desk.jpg    1x,
+                    ./images/work/work-card1-desk-2x.jpg 2x
+                  "
+                  src="./images/work/work-card1-desk.jpg"
                   alt="Программист крупным планом работает за столом в офисе"
-                  width="370"
-                  height="294"
                 />
                 <div class="work-list__overlay">
                   <h3 class="work-list__text">Десктопные приложения</h3>
@@ -216,12 +218,14 @@
               </a>
             </li>
             <li class="work-list__item">
-              <a class="link" href="#"
-                ><img
-                  src="./images/box/box2.jpg"
-                  alt="Разработчик создает интерфейс для мобильного приложения"
-                  width="370"
-                  height="294"
+              <a class="link" href="#">
+                <img
+                  srcset="
+                    ./images/work/work-card2-desk.jpg    1x,
+                    ./images/work/work-card2-desk-2x.jpg 2x
+                  "
+                  src="./images/work/work-card1-desk.jpg"
+                  alt="Программист крупным планом работает за столом в офисе"
                 />
                 <div class="work-list__overlay">
                   <h3 class="work-list__text">Мобильные приложения</h3>
@@ -229,12 +233,14 @@
               </a>
             </li>
             <li class="work-list__item">
-              <a class="link" href="#"
-                ><img
-                  src="./images/box/box3.jpg"
-                  alt="Веб-дизайнер работает с палитрой цветов на планшете"
-                  width="370"
-                  height="294"
+              <a class="link" href="#">
+                <img
+                  srcset="
+                    ./images/work/work-card3-desk.jpg    1x,
+                    ./images/work/work-card3-desk-2x.jpg 2x
+                  "
+                  src="./images/work/work-card1-desk.jpg"
+                  alt="Программист крупным планом работает за столом в офисе"
                 />
                 <div class="work-list__overlay">
                   <h3 class="work-list__text">Дизайнерские решения</h3>
@@ -248,42 +254,63 @@
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="team-list list">
+          <ul class="team-list">
             <li class="team-list__item">
-              <img
-                class="team-img"
-                src="./images/team/team-mob.jpg"
-                alt=""
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card1-desk.jpg    1x,
+                    ./images/team/team-card1-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card1-tab.jpg    1x,
+                    ./images/team/team-card1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card1-mob.jpg    1x,
+                    ./images/team/team-card1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  class="responsive-list__img"
+                  src="./images/team/team-card1-mob.jpg"
+                  alt=""
+                />
+              </picture>
               <div class="team-list__card-content">
                 <h3 class="team-list__subtitle">Игорь Демьяненко</h3>
                 <p class="team-list__description">Product Designer</p>
-                <ul class="social-list list">
+                <ul class="social-list">
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -293,40 +320,61 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-img"
-                src="./images/team/team-mob.jpg"
-                alt=""
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card2-desk.jpg    1x,
+                    ./images/team/team-card2-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card2-tab.jpg    1x,
+                    ./images/team/team-card2-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card2-mob.jpg    1x,
+                    ./images/team/team-card2-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  class="responsive-list__img"
+                  src="./images/team/team-card2-mob.jpg"
+                  alt=""
+                />
+              </picture>
               <div class="team-list__card-content">
                 <h3 class="team-list__subtitle">Ольга Репина</h3>
                 <p class="team-list__description">Frontend Developer</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -336,40 +384,61 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-img"
-                src="./images/team/team-mob.jpg"
-                alt=""
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card3-desk.jpg    1x,
+                    ./images/team/team-card3-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card3-tab.jpg    1x,
+                    ./images/team/team-card3-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card3-mob.jpg    1x,
+                    ./images/team/team-card3-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  class="responsive-list__img"
+                  src="./images/team/team-card3-mob.jpg"
+                  alt=""
+                />
+              </picture>
               <div class="team-list__card-content">
                 <h3 class="team-list__subtitle">Николай Тарасов</h3>
                 <p class="team-list__description">Marketing</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -379,40 +448,61 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-img"
-                src="./images/team/team-mob.jpg"
-                alt=""
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card4-desk.jpg    1x,
+                    ./images/team/team-card4-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card4-tab.jpg    1x,
+                    ./images/team/team-card4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card4-mob.jpg    1x,
+                    ./images/team/team-card4-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  class="responsive-list__img"
+                  src="./images/team/team-card4-mob.jpg"
+                  alt=""
+                />
+              </picture>
               <div class="team-list__card-content">
                 <h3 class="team-list__subtitle">Михаил Ермаков</h3>
                 <p class="team-list__description">UI Designer</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="" class="social-list__link link">
+                    <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -562,7 +652,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close" data-modal-close>
           <svg class="modal__close-icon">

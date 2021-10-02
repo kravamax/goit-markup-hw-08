@@ -13,6 +13,10 @@
   flex-wrap: wrap;
   margin-left: calc(-1 * #{$main-margin});
   margin-top: calc(-1 * #{$main-margin});
+
+  @media screen and (max-width: 479px) {
+    justify-content: center;
+  }
 }
 
 .clients-list__item {
