@@ -27,21 +27,25 @@
   position: absolute;
   z-index: 2;
   width: 100%;
+
   top: 0;
   left: 0;
   padding-top: 60px;
+  padding-bottom: 48px;
 
-  height: 796px;
   padding-left: 42px;
   padding-right: 42px;
 
   background-color: $main-bg-color;
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
   }
 
   @media screen and (min-width: 768px) {
     display: none;
+    padding-bottom: 28px;
   }
 }
 
@@ -65,10 +69,7 @@
 }
 
 .mob-contacts__set {
-  margin-top: 302px;
-  @media screen and (max-width: 479px) {
-    margin-top: 170px;
-  }
+  margin-top: auto;
 }
 
 .mob-contacts__item {
@@ -103,7 +104,7 @@
 .mob-social-set {
   @extend %list;
 
-  margin-top: 64px;
+  margin-top: auto;
 }
 
 .mob-social__item {
