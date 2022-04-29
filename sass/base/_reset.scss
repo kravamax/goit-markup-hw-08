@@ -49,3 +49,15 @@ img {
 %link {
   text-decoration: none;
 }
+
+.header,
+.main,
+.footer {
+  @media screen and (max-width: 239px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 240px) {
+    display: block;
+  }
+}
