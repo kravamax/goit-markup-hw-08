@@ -139,24 +139,42 @@
           <!-- ФИЛЬТРЫ -->
           <ul class="section-list">
             <li class="section-item">
-              <button class="section-btn btn" type="button">Все</button>
+              <button
+                class="section-btn btn is-active"
+                type="button"
+                data-value="all"
+              >
+                Все
+              </button>
             </li>
             <li class="section-item">
-              <button class="section-btn btn" type="button">Веб-сайты</button>
+              <button class="section-btn btn" type="button" data-value="sites">
+                Веб-сайты
+              </button>
             </li>
             <li class="section-item">
-              <button class="section-btn btn" type="button">Приложения</button>
+              <button class="section-btn btn" type="button" data-value="apps">
+                Приложения
+              </button>
             </li>
             <li class="section-item">
-              <button class="section-btn btn" type="button">Дизайн</button>
+              <button class="section-btn btn" type="button" data-value="design">
+                Дизайн
+              </button>
             </li>
             <li class="section-item">
-              <button class="section-btn btn" type="button">Маркетинг</button>
+              <button
+                class="section-btn btn"
+                type="button"
+                data-value="marketing"
+              >
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- КАРТОЧКИ -->
           <ul class="portfolio-list">
-            <li class="portfolio-item">
+            <!-- <li class="portfolio-item">
               <a href="" class="portfolio-card">
                 <div class="card-overlay">
                   <picture>
@@ -566,7 +584,7 @@
                   <p class="portfolio-description">Приложение</p>
                 </div>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -582,10 +600,7 @@
               <ul class="footer-address__list list">
                 <li class="footer-address__item">
                   <a
-                    class="
-                      footer-address__link footer-address__link--main-color
-                      link
-                    "
+                    class="footer-address__link footer-address__link--main-color link"
                     href="https://goo.gl/maps/1FagarzU2wQ8Z3tW7"
                     >г. Киев, пр-т Леси Украинки, 26</a
                   >
@@ -659,6 +674,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/index.js" type="module"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
